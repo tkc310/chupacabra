@@ -1,6 +1,6 @@
 # Chupacabra
 
-![logo](images/logo.png)
+![logo](src/images/logo.png)
 
 ## Usage
 
