@@ -6,5 +6,5 @@
     "source.fixAll.eslint"
   ],
   "eslint.packageManager": "npm",
-  "cSpell.words": ["Chupacabra", "favicons"]
+  "cSpell.words": ["chupa", "Chupacabra", "favicons"]
 }
