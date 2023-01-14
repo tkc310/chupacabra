@@ -7,8 +7,7 @@ import { manifest as _manifest } from './src/manifest';
 const manifest = defineManifest(_manifest);
 
 const root = resolve(__dirname, 'src');
-const assetsDir = resolve(__dirname, 'assets');
-
+// const assetsDir = resolve(__dirname, 'assets');
 // const outDir = resolve(__dirname, "dist");
 // const publicDir = resolve(__dirname, "public");
 // const isDev = process.env.__DEV__ === "true";
