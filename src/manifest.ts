@@ -1,6 +1,7 @@
-import { SERVICE_NAME } from './constants';
+import { ManifestV3Export } from '@crxjs/vite-plugin';
+import { SERVICE_NAME, SUPPORTED_URLS } from './constants';
 
-export const manifest = {
+export const manifest: ManifestV3Export = {
   manifest_version: 3,
   name: SERVICE_NAME,
   description: 'Tool to acquire property information from web pages',
@@ -18,8 +19,9 @@ export const manifest = {
   },
   content_scripts: [
     {
-      // matches: SUPPORTED_ORIGINS,
-      matches: ['https://*/*'],
+      // https://qiita.com/ledsun/items/4fbaee8e9397bb3e5321#%E5%80%A4%E3%81%94%E3%81%A8%E3%81%AE%E6%B3%A8%E5%85%A5%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%9F%E3%83%B3%E3%82%B0
+      // run_at: 'document_end',
+      matches: SUPPORTED_URLS,
       js: ['src/scripts/content.ts'],
     },
   ],
